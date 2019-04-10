@@ -97,6 +97,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Hoteis.cs" />
+    <Compile Include="Models\Quartos.cs" />
+    <Compile Include="Models\Reservas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

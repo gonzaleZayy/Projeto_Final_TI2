@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Web;
 
 namespace Projeto_Final_TI2.Models
@@ -19,5 +20,7 @@ namespace Projeto_Final_TI2.Models
         public Boolean Pago { get; set; }
         //estado do pagamento  
         public string estadoPagamento { get; set; }
+        //reservas
+        public ICollection<Hoteis> ListaDeHoteis { get; set; }
     }
 }

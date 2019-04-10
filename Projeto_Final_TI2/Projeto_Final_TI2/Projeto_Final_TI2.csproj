@@ -99,6 +99,7 @@
     <Compile Include="Models\Clientes.cs" />
     <Compile Include="Models\Hoteis.cs" />
     <Compile Include="Models\Fotos.cs" />
+    <Compile Include="Models\HoteisDB.cs" />
     <Compile Include="Models\Quartos.cs" />
     <Compile Include="Models\Reservas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

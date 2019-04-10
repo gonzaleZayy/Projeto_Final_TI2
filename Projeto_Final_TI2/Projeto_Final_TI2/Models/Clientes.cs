@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Web;
 
 namespace Projeto_Final_TI2.Models
@@ -15,5 +16,7 @@ namespace Projeto_Final_TI2.Models
         public string Morada { get; set; }
         //nome do cliente
         public string NomeCliente { get; set; }
+        //clientes que reservaram hoteis
+        public ICollection<Hoteis>ListadeHoteis { get; set; }
     }
 }

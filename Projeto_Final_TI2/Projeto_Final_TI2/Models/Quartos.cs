@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Web;
 
 namespace Projeto_Final_TI2.Models
@@ -11,5 +12,7 @@ namespace Projeto_Final_TI2.Models
         public decimal precoQuarto { get; set; }
         //descrição do quarto
         public string descrQuarto { get; set; }
+        //hoteis com quartos
+        public ICollection<Hoteis> ListaDeHoteis { get; set; }
     }
 }

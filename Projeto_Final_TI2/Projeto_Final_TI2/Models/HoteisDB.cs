@@ -9,6 +9,7 @@ namespace Projeto_Final_TI2.Models
     {
         public HoteisDB() : base("HoteisConnectionString") { }
         //descrever os nomes detalhados na base de dados
+        public virtual DbSet<Hoteis> Hoteis { get; set; } // tabela Hoteis
         public virtual DbSet<Hoteis> Hoteis { get; set; } // tabela Multas
 
 

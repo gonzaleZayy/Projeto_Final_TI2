@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Web;
 
 namespace Projeto_Final_TI2.Models
@@ -21,6 +22,23 @@ namespace Projeto_Final_TI2.Models
         //estado do pagamento  
         public string estadoPagamento { get; set; }
         //reservas
+
+        //foreign keys
+        //foreign key clientes
+        [ForeignKey("Clientes")]
+        public int ClientesFK { get; set; }
+        public Clientes Cliente { get; set; }
+
+        //foreign key hotel
+        [ForeignKey("Hoteis")]
+        public int HoteisFK { get; set; }
+        public Hoteis Hotel { get; set; }
+
+        //foreign key Quartos
+        [ForeignKey("Quartos")]
+        public int QuartosFK { get; set; }
+        public Quartos Quarto { get; set; }
+
         public ICollection<Hoteis> ListaDeHoteis { get; set; }
     }
 }

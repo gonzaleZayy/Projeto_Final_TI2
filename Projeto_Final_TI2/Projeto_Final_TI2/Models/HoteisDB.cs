@@ -10,7 +10,10 @@ namespace Projeto_Final_TI2.Models
         public HoteisDB() : base("HoteisConnectionString") { }
         //descrever os nomes detalhados na base de dados
         public virtual DbSet<Hoteis> Hoteis { get; set; } // tabela Hoteis
-        public virtual DbSet<Hoteis> Hoteis { get; set; } // tabela Multas
+        public virtual DbSet<Quartos> Quartos { get; set; } // tabela Quartos
+        public virtual DbSet<Fotos> Fotos { get; set; } // tabela Fotos
+        public virtual DbSet<Clientes> Clientes { get; set; } // tabela Clientes
+        public virtual DbSet<Reservas> Reservas { get; set; } // tabela Reservas
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
